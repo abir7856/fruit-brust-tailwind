@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Brust</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-Awesome -->
+    <script
+      src="https://kit.fontawesome.com/140a3f4f76.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Daisy Cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "primary-red": " #F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="lato-font">
+    <header>
+      <nav>
+        <div class="hidden lg:block">
+          <div
+            class="container mx-auto my-12 bg-primary-red rounded-full flex justify-between items-center gap-30 px-12 py-8 text-white"
+          >
+            <ul class="flex gap-8 items-center text-lg font-medium">
+              <li>
+                <a href>Home</a>
+              </li>
+              <li>
+                <a href>About Us</a>
+              </li>
+              <li>
+                <a href>Shop</a>
+              </li>
+              <li>
+                <a href>All Fruits</a>
+              </li>
+            </ul>
+            <div class="flex gap-4 items-center">
+              <img src="images/logo.png" alt />
+              <h2 class="text-4xl font-bold">Fruit Burst</h2>
+            </div>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="bh-white rounded-full px-6 py-4 w-96"
+              />
+              <i
+                class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-2xl text-black"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="navbar bg-base-300 rounded-box bg-white lg:hidden">
+          <div class="flex-1 px-2 lg:flex-none">
+            <div class="flex gap-4 items-center">
+              <img src="images/logo.png" alt />
+              <h2 class="text-xl font-bold">Fruit Burst</h2>
+            </div>
+          </div>
+          <div class="flex justify-end flex-1 px-2">
+            <div class="flex items-stretch">
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost rounded-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M3.75 6.75H20.25M3.75 12H20.25M3.75 17.25H20.25"
+                      stroke="#121212"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </label>
+                <ul
+                  tabindex="0"
+                  class="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+                >
+                  <li>
+                    <a href>Home</a>
+                  </li>
+                  <li>
+                    <a href>About Us</a>
+                  </li>
+                  <li>
+                    <a href>Shop</a>
+                  </li>
+                  <li>
+                    <a href>All Fruits</a>
+                  </li>
+                  <li>
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="Search here"
+                        class="bh-white rounded-full px-6 py-4"
+                      />
+                      <i
+                        class="fa-solid fa-magnifying-glass absolute start-1 text-2xl text-black"
+                      ></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
